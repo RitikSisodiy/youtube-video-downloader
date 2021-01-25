@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{% load static %}
+	{% for i in vid %}		
+<video oncontextmenu="return false;" name='demo' controlsList="nodownload" controls width='50%' height='40%'>
+<source src="/media/{{i.video_file}}" type="video/mp4"></source>
+</video>
+{% endfor %}
+</body>
+</html>
